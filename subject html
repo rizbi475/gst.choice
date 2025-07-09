@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GST Result 2025</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      max-width: 700px;
+      width: 100%;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .login-box {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .login-box input[type="text"], .login-box input[type="password"] {
+      padding: 10px;
+      margin: 5px;
+      width: 45%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .login-box button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .login-box button:hover {
+      background-color: #0056b3;
+    }
+    .result-section {
+      display: none;
+      text-align: center;
+    }
+    .result-section img {
+      width: 200px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>GST Result 2025</h1>
+    <div class="login-box">
+      <input type="text" id="roll" placeholder="Enter Roll">
+      <input type="password" id="pin" placeholder="Enter PIN">
+      <br>
+      <button onclick="checkResult()">View Result</button>
+    </div>
+
+    <div class="result-section" id="result">
+      <p><strong>Roll:</strong> 1094045 | <strong>PIN:</strong> 1094045</p>
+      <img src="/mnt/data/Screenshot_8-7-2025_232118_.jpeg" alt="Acknowledgement Slip">
+      <table>
+        <tr>
+          <th>SN</th>
+          <th>Subject</th>
+          <th>Selection Status</th>
+        </tr>
+        <tr><td>001</td><td>Law, BU</td><td>W793</td></tr>
+        <tr><td>002</td><td>LAW, NSTU</td><td>W5603</td></tr>
+        <tr><td>003</td><td>Economics, BRUR</td><td>W534</td></tr>
+        <tr><td>004</td><td>Economics, JKKNIU</td><td>W412</td></tr>
+        <tr><td>005</td><td>Economics, MBSTU</td><td>W382</td></tr>
+        <tr><td>006</td><td>Economics, BU</td><td>W413</td></tr>
+        <tr><td>007</td><td>Economics, PUST</td><td>W504</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    function checkResult() {
+      const roll = document.getElementById('roll').value;
+      const pin = document.getElementById('pin').value;
+      if (roll === '1094045' && pin === '1094045') {
+        document.getElementById('result').style.display = 'block';
+      } else {
+        alert('Invalid Roll or PIN');
+      }
+    }
+  </script>
+</body>
+</html>
